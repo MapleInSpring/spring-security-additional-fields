@@ -34,7 +34,6 @@ public class TrialSecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
-                .defaultSuccessUrl("/only-special-ones-can-see", true)
                 .and()
                 .httpBasic()
         ;
